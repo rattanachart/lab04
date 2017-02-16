@@ -6,22 +6,23 @@
         if(document.images){
            document.images["docs"].src = docsOn.src;
         }
+    function unhighlightdocs(){
         if(document.images){
            document.images["docs"].src = docsOff.src;
         }
-        if(document.images){
-           docsOn =new Image();
-           doccsOn.src ="gg_color.jpg";
-           docsOff = new Image();
-           doccsOn.src ="gg_gray.jpg";
-        }
     }
-     </script>
+    if(document.images){
+        docsOn =new Image();
+        doccsOn.src ="gg_color.jpg";
+        docsOff = new Image();
+        doccsOff.src ="gg_gray.jpg";
+     }
+    </script>
 </head>
 <body>
-<p><a href = http://google.com
-    onmouseover="highlightdocs()" onmouseout="unhighlightdocs()">
-    <img src="g_gray.jpg" name=dosc height=25 width=25 border=0>
+<p><a href = "http://www.google.com"
+    onMouseOver="highlightdocs()" onMouseOut="unhighlightdocs()">
+    <img src="gg_gray.jpg" name=docs height=100 width=100 border=0>
     </a>
 </p>
 </body>
